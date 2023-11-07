@@ -31,7 +31,7 @@ def SIR1(beta, gamma, df,time):
     susceptible = [len(individuals) - 1]  # 初始时刻，除初始感染者外的所有个体都是易感者
     infected = [1]  # 初始时刻，一个个体处于感染状态
     recovered = [0]  # 初始时刻，没有个体处于康复状态
-
+    # total_timesteps = time + 100
     # 模拟 SIR 模型在每个时间步骤的演化
     for timestep in range(time, total_timesteps):
         new_infected = 0
